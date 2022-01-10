@@ -7,6 +7,17 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Test</h1>
+    <h1>Index</h1>
+    <ul>
+        <% courses.forEach(course => { %>
+            <li>
+                <a href="/courses/<%=course._id;%>"><%=course.name;%></a>
+                <form action="/courses/<%=course.id%>?_method=DELETE" method="POST">
+                    <input type="submit" value="DELETE">
+                </form>
+                <a href="/courses<%=course._id%>/edit">Edit Course</a>
+            </li>
+        <% }); %>
+    </ul>
 </body>
 </html>

@@ -1,6 +1,6 @@
 const express = require('express');
 const coursesRouter = express.Router();
-const Course = require('..models/course');
+const Course = require('../models/course');
 const { append } = require('express/lib/response');
 
 

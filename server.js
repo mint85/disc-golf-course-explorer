@@ -2,7 +2,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const morgan = require('morgan');
-const mongoose = require('mongoose');
 const methodOverride = require('method-override');
 const coursesController = require('./controllers/courses');
 const res = require('express/lib/response');

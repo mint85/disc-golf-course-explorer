@@ -27,11 +27,20 @@ coursesRouter.get('/new', (req, res) => {
     res.render('new.ejs');
 });
 
+//
+
+// Create Route
+coursesRouter.post('/', (req, res) => {
+    Course.create(req.body, (err, createdCourse) => {
+        res.redirect('/courses');
+    });
+});
+
 // Edit Route
 coursesRouter.get('/:id/edit', (req, res) => {
     Course.findById(req.params.id, (error, foundCourse) => {
         res.render('edit.ejs', {
-            couse: foundCourse,
+            course: foundCourse,
         });
     });
 });

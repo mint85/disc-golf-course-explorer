@@ -27,6 +27,8 @@ coursesRouter.get('/new', (req, res) => {
     res.render('new.ejs');
 });
 
+// Delete Route
+
 // Update Route
 coursesRouter.put('/:id', (req, res) => {
     Course.findByIdAndUpdate(req.params.id, req.body, {

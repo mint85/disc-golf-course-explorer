@@ -9,8 +9,9 @@
 <body>
     <h1>Edit</h1>
     <form action="/courses/<%=course._id%>?_method=PUT" method="POST">
-        <input type="text" name="name" value="<%= course.name%>">
+        Course Name: <input type="text" name="name" value="<%= course.name%>"><br>
         <input type="submit" value="Submit Changes">
     </form>
+    <a href="/courses">Back to Course Listing</a>
 </body>
 </html>

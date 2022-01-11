@@ -28,6 +28,11 @@ coursesRouter.get('/new', (req, res) => {
 });
 
 // Delete Route
+coursesRouter.delete('/:id', (req, res) => {
+    Course.findByIdAndDelete(req.params.id, (err, data) => {
+        res.redirect('/courses');
+    });
+});
 
 // Update Route
 coursesRouter.put('/:id', (req, res) => {

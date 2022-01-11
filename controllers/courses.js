@@ -46,13 +46,14 @@ coursesRouter.put('/:id', (req, res) => {
 // Create Route
 coursesRouter.post('/', (req, res) => {
     Course.create(req.body, (err, createdCourse) => {
+        console.log(err);
         res.redirect('/courses');
     });
 });
 
 // Edit Route
 coursesRouter.get('/:id/edit', (req, res) => {
-    Course.findById(req.params.id, (error, foundCourse) => {
+    Course.findById(req.params.id, (err, foundCourse) => {
         res.render('edit.ejs', {
             course: foundCourse,
         });

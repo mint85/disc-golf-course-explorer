@@ -14,6 +14,7 @@ require('dotenv').config();
 app.use(morgan('dev'));
 app.use(express.urlencoded({ extended: false }));
 app.use(methodOverride('_method'));
+
 app.use('/courses', coursesController);
 app.get('/*', (req, res) => {
     res.render('404.ejs');

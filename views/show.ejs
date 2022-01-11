@@ -4,9 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Disc Golf Course Information</title>
 </head>
 <body>
     <h1>Show</h1>
+    <div class="show">
+        <h2>Course Name: <%= course.name %></h2><br>
+        <h4>Location: <%= course.location %> - <%= course.zipcode %></h4><br>
+        <p>Holes: <%= course.holes %></p><br>
+        <p>Water Holes? <%= course.waterHoles %></p><br>
+        <p>Tee Type: <%= course.teeType %></p><br>
+        <p>Cost: <%= course.cost %></p><br>
+        <p>Beginner Friendly? <%= course.beginnerFriendly %></p><br>
+        <p>Description: <%= course.description %></p><br>
+        <p>Photos:</p>
+    </div>
+    <a href="/courses">Back to Course Listing</a>
 </body>
 </html>

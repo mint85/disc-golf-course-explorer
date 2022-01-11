@@ -4,7 +4,6 @@ const mongoose = require('mongoose');
 const morgan = require('morgan');
 const methodOverride = require('method-override');
 const coursesController = require('./controllers/courses');
-const res = require('express/lib/response');
 
 const app = express();
 
@@ -16,9 +15,9 @@ app.use(express.urlencoded({ extended: false }));
 app.use(methodOverride('_method'));
 
 app.use('/courses', coursesController);
-app.get('/*', (req, res) => {
-    res.render('404.ejs');
-});
+// app.get('/*', (req, res) => {
+//     res.render('404.ejs');
+// });
 
 // Database Connection With Connection Error/Success Check
 mongoose.connect(process.env.DATABASE_URL);

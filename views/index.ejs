@@ -15,10 +15,10 @@
                 <form action="/courses/<%=course.id%>?_method=DELETE" method="POST">
                     <input type="submit" value="DELETE">
                 </form>
-                <a href="/courses<%=course._id%>/edit">Edit Course</a>
+                <a href="/courses/<%= course._id %>/edit">Edit Course</a>
             </li>
         <% }); %>
     </ul>
-    <a href="/new">Add A New Course</a>
+    <a href="/courses/new">Add A New Course</a>
 </body>
 </html>

@@ -27,7 +27,14 @@ coursesRouter.get('/new', (req, res) => {
     res.render('new.ejs');
 });
 
-//
+// Update Route
+coursesRouter.put('/:id', (req, res) => {
+    Course.findByIdAndUpdate(req.params.id, req.body, {
+        new: true,
+    }, (err,updatedCourse) => {
+        res.redirect('/courses/' + req.params.id);
+    });
+});
 
 // Create Route
 coursesRouter.post('/', (req, res) => {

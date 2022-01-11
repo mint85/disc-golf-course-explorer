@@ -11,13 +11,15 @@ require('dotenv').config();
 
 // Middleware
 app.use(morgan('dev'));
+app.use('/public/', express.static('public'));
 app.use(express.urlencoded({ extended: false }));
 app.use(methodOverride('_method'));
 
 app.use('/courses', coursesController);
-// app.get('/*', (req, res) => {
-//     res.render('404.ejs');
-// });
+
+app.get('/*', (req, res) => {
+    res.render('404.ejs');
+});
 
 // Database Connection With Connection Error/Success Check
 mongoose.connect(process.env.DATABASE_URL);

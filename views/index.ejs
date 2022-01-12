@@ -25,17 +25,20 @@
     </section>
     <section class="course-list-section">
         <div class="course-list">
-            <ul>
-                <% courses.forEach(course => { %>
-                <li>
-                    <a href="/courses/<%=course._id;%>"><%=course.name;%></a>
-                    <form action="/courses/<%=course.id%>?_method=DELETE" method="POST">
-                        <input type="submit" value="DELETE">
-                    </form>
-                    <a href="/courses/<%= course._id %>/edit">Edit Course</a>
-                </li>
-                <% }); %>
-            </ul>
+            <div class="d-flex justify-content-center">
+                <ul class="list-group">
+                    <% courses.forEach(course => { %>
+                    <li class="list-group-item">
+                        <a href="/courses/<%=course._id;%>"><%=course.name;%></a>
+                        <img src="<%= course.image1 %>" alt="Course Image 1" class="course-image-index">
+                        <form action="/courses/<%=course.id%>?_method=DELETE" method="POST">
+                            <input type="submit" value="DELETE">
+                        </form>
+                        <a href="/courses/<%= course._id %>/edit">Edit Course</a>
+                    </li>
+                    <% }); %>
+                </ul>
+            </div>
         </div>
     </section>
     <a href="/courses/new">Add A New Course</a>

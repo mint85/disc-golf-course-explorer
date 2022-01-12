@@ -10,6 +10,10 @@ const courseSchema = new mongoose.Schema({
     cost: Number,
     beginnerFriendly: Boolean,
     description: String,
+    image1: String,
+    image2: String,
+    image3: String,
+    image4: String,
 });
 
 const Course = mongoose.model('Course', courseSchema);

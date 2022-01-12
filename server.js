@@ -4,6 +4,7 @@ const mongoose = require('mongoose');
 const morgan = require('morgan');
 const methodOverride = require('method-override');
 const coursesController = require('./controllers/courses');
+const Course = require('./models/course');
 
 const app = express();
 
@@ -17,9 +18,8 @@ app.use(methodOverride('_method'));
 
 app.use('/courses', coursesController);
 
-app.get('/*', (req, res) => {
-    res.render('404.ejs');
-});
+
+
 
 // Database Connection With Connection Error/Success Check
 mongoose.connect(process.env.DATABASE_URL);
@@ -32,6 +32,10 @@ db.on('disconnected', () => console.log('mongo is disconnected'));
 app.get('/', (req, res) => {
     res.redirect('/courses');
 }); 
+
+app.get('/*', (req, res) => {
+    res.render('404.ejs');
+});
 
 // Listener
 const PORT = process.env.PORT;

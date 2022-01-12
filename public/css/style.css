@@ -1,0 +1,34 @@
+body {
+    background-color: black;
+    color: white;
+}
+.hero-section {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+}
+.hero-image {
+    background: url("/public/images/DGCElogocrop.jpg") no-repeat center center;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    padding: 40px;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    
+}
+
+.hero-text h1 {
+    font-size: 3.5em;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}

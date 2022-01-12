@@ -34,6 +34,14 @@ body {
 }
 
 .course-image-index {
-    height: 20vh;
+    height: 30vh;
     
+}
+
+.course-list {
+    color: black;
+}
+
+.list-group-item {
+    background-color: lightsteelblue;
 }

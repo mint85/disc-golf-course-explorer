@@ -5,6 +5,8 @@ const courseSchema = new mongoose.Schema({
     location: String,
     zipcode: Number,
     holes: Number,
+    length: Number,
+    parInfo: Number,
     waterHoles: Boolean,
     teeType: String,
     cost: Number,

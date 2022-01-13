@@ -45,3 +45,9 @@ body {
 .list-group-item {
     background-color: lightsteelblue;
 }
+.index-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1em;
+}

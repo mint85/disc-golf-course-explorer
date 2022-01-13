@@ -16,10 +16,21 @@
 
 <body>
     <div class="container">
-        <h1>New</h1>
+        <h1>Add A New Course</h1>
         <form action="/courses" method="post">
-            Course Name: <input type="text" name="name" /><br />
-            <input type="submit" value="Submit New Course" />
+            Course Name: <input type="text" name="name"><br>
+            Location: <input type="text" name="location""><br>
+            Holes: <input type="number" name="holes"><br>
+            Water Holes? <input type="checkbox" name="waterHoles"><br>
+            Tee Type: <input type="text" name="teeType"><br>
+            Cost Per Round: <input type="number" name="cost" step=".01"><br>
+            Beginner Friendly? <input type="checkbox" name="beginnerFriendly"><br>
+            Description: <br><textarea name="description" cols="30" rows="10"></textarea><br>
+            Image 1 URL: <input type="text" name="image1"><br>
+            Image 2 URL: <input type="text" name="image2"><br>
+            Image 3 URL: <input type="text" name="image3"><br>
+            Image 4 URL: <input type="text" name="image4"><br>
+            <input type="submit" class="btn btn-success" value="Submit New Course">
         </form>
     </div>
 </body>

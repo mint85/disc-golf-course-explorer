@@ -1,4 +1,5 @@
 module.exports = [{
+    courseOrder: '1',
     name: 'Bryant Lake Disc Golf Course',
     location: 'Eden Prairie, Minnesota',
     zipcode: '55344',
@@ -16,6 +17,7 @@ module.exports = [{
     image4: 'https://res.cloudinary.com/amjdev/image/upload/v1642031986/a0f63129_ug3pno.jpg',
 },
 {
+    courseOrder: '3',
     name: 'Sunnyside Park',
     location: 'New Hope, Minnesota',
     zipcode: '55428',
@@ -30,6 +32,7 @@ module.exports = [{
     image1: 'https://res.cloudinary.com/amjdev/image/upload/v1642031380/f9f76f09_wjzi0j.jpg',
 },
 {
+    courseOrder: '2',
     name: 'Blue Ribbon Pines',
     location: 'East Bethel, Minnesota',
     zipcode: '55011',

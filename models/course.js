@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 
 const courseSchema = new mongoose.Schema({
+    courseOrder: Number,
     name: String,
     location: String,
     zipcode: Number,

@@ -51,3 +51,12 @@ body {
     justify-content: space-around;
     padding: 1em;
 }
+
+.show-style {
+    /* background: url("/public/images/brpstump.jpg") no-repeat center center fixed;
+    background-size: cover; */
+}
+
+.show {
+    background-color: black;
+}

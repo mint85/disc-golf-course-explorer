@@ -14,7 +14,7 @@ module.exports = [{
     image1: 'https://res.cloudinary.com/amjdev/image/upload/v1642020280/bryantlake1_jncxhg.jpg',
     image2: 'https://res.cloudinary.com/amjdev/image/upload/v1642031865/c07058f9_xbjzwn.jpg',
     image3: 'https://res.cloudinary.com/amjdev/image/upload/v1642031941/e72362e7_ncrcw5.jpg',
-    image4: 'https://res.cloudinary.com/amjdev/image/upload/v1642031986/a0f63129_ug3pno.jpg',
+    image4: 'https://res.cloudinary.com/amjdev/image/upload/v1642039244/blakebryant_fxagyc.jpg',
 },
 {
     courseOrder: '3',
@@ -45,7 +45,7 @@ module.exports = [{
     beginnerFriendly: false,
     description: `Professional level course. Open and wooded with ponds, doglegs, abundant risk/reward and signature holes. 100' tall pines. Tests every aspect of your game.`,
     image1: 'https://res.cloudinary.com/amjdev/image/upload/v1642032400/335166a2_x075w7.jpg',
-    image2: 'https://res.cloudinary.com/amjdev/image/upload/v1642032459/a9b2db62_niiavk.jpg',
+    image2: 'https://res.cloudinary.com/amjdev/image/upload/v1642038993/allenbrphole4_jpksak.jpg',
     image3: 'https://res.cloudinary.com/amjdev/image/upload/v1642032590/IMG_1712-510x382_hq1v3i.jpg',
     image4: 'https://res.cloudinary.com/amjdev/image/upload/v1642032635/blue-ribbon-pines-water.jpg',
 },

@@ -38,6 +38,14 @@ Deployed App: https://disc-golf-course-explorer.herokuapp.com/
 
 <br>
 
+## Index Page Wireframe:
+
+<br>
+
+![wireframe1](/public/images/indexwireframe.png)
+
+<br> 
+
 ## Next Steps:
 
 <br>

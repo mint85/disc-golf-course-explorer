@@ -1,15 +1,53 @@
-<header>
-    <a href="/courses">
+<!-- <header> -->
+    <!-- <a href="/courses">
         <h1>Disc Golf Course Explorer</h1>
-    </a>
-    <nav>
-        <ol>
+    </a> -->
+    <!-- <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="/courses">
+                <img alt="Brand" src="../public/images/DGCElogo.png" class="img-fluid">
+              </a>
+            </div>
+          </div> -->
+          
+        <!-- <ol>
             <li>
                 <a href="/courses">Course Listing</a>
             </li>
             <li>
-                <a href="/"></a>
+                <a href="/new">Add New Course</a>
             </li>
-        </ol>
-    </nav>
+            <li>
+                <a href="https://www.pdga.com/">PDGA Website</a>
+            </li>
+            <li>
+                <a href="https://www.reddit.com/r/discgolf/">/r/discgolf</a>
+            </li>
+        </ol> -->
+    <!-- </nav>
+</header> -->
+
+<header>
+    <div class="m-4">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a href="/courses" class="navbar-brand">
+                    <img src="../public/images/DGCElogo.png" height="50" alt="DGCE Logo">
+                </a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav">
+                        <a href="/courses" class="nav-item nav-link">Course Listing</a>
+                        <a href="/courses/new" class="nav-item nav-link">Add New Course</a>
+                        <a href="https://www.pdga.com/" target="_blank" class="nav-item nav-link">PDGA Website</a>
+                        <a href="https://www.reddit.com/r/discgolf/" target="_blank" class="nav-item nav-link">Disc Golf Subreddit</a>
+                        <a href="https://gottagogottathrow.com/" target="_blank" class="nav-item nav-link">Buy Disc Golf Equipment</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
 </header>

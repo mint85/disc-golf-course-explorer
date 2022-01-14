@@ -2,6 +2,7 @@ body {
     background-color: black;
     color: white;
 }
+
 .hero-section {
     height: 100vh;
     width: 100%;
@@ -51,6 +52,7 @@ body {
     justify-content: space-around;
     padding: 1em;
 }
+
 
 .show-style {
     /* background: url("/public/images/brpstump.jpg") no-repeat center center fixed;

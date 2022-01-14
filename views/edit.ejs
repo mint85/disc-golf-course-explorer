@@ -24,7 +24,7 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarCollapse">
                         <div class="navbar-nav">
-                            <a href="/courses" class="nav-item nav-link">Course Listing</a>
+                            <a href="/courses" class="nav-item nav-link">All Courses</a>
                             <a href="/courses/new" class="nav-item nav-link">Add New Course</a>
                             <a href="https://www.pdga.com/" target="_blank" class="nav-item nav-link">PDGA Website</a>
                             <a href="https://www.reddit.com/r/discgolf/" target="_blank" class="nav-item nav-link">Disc Golf Subreddit</a>
@@ -35,6 +35,7 @@
             </nav>
         </div>
     </header>
+    
     <div class="edit-css">
         <div class="edit-area" style="margin-top: 5em;">
             <h1>Edit Course</h1><br>
@@ -54,9 +55,9 @@
                 Image 4 URL: <input type="text" name="image4" value="<%=course.image4%>"><br><br>
                 <input type="submit" class="btn btn-success" value="Submit Changes"><br>
             </form>
-
         </div>
     </div>
+    <%- include('../partials/footer.ejs') %>
 </body>
 
 </html>

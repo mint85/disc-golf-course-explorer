@@ -19,7 +19,7 @@ coursesRouter.get('/', (req, res) => {
         res.render('index.ejs', {
             courses: allCourses,
         });
-    }).sort({courseOrder:-1});
+    }).sort({courseOrder:1});
 });
 
 // New Route

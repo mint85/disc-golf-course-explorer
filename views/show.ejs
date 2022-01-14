@@ -17,21 +17,28 @@
     <div class="container">
         <h1>Detailed Course Info</h1>
         <div class="show">
-            <h2>Course Name: <%= course.name %></h2><br>
-            <h4>Location: <%= course.location %> - <%= course.zipcode %></h4><br>
-            <p>Holes: <%= course.holes %></p><br>
-            <p>Water Holes? <%= course.waterHoles %></p><br>
-            <p>Tee Type: <%= course.teeType %></p><br>
-            <p>Cost Per Round: <%= course.cost %></p><br>
-            <p>Beginner Friendly? <%= course.beginnerFriendly %></p><br>
-            <p>Description: <%= course.description %></p><br>
-            <p>Photos:</p>
-                <img src="<%=course.image1%>" class="d-block w-100" alt="...">
-                <img src="<%=course.image2%>" class="d-block w-100" alt="...">
-                <img src="<%=course.image3%>" class="d-block w-100" alt="...">
-                <img src="<%=course.image4%>" class="d-block w-100" alt="...">
-        </div>
-        <a href="/courses">Back to Course Listing</a>
+            <h2 id="show-name"> <%= course.name %></h2><br>
+            <h4 id="show-location"><%= course.location %> - <%= course.zipcode %></h4><br>
+            <hr>
+            <p id="show-holes">Holes:</p>
+            <p> <%= course.holes %></p><br>
+            <p id="show-waterHoles">Water Holes?</p>
+            <p> <%= course.waterHoles %></p><br>
+            <p id="show-teeType">Tee Type:</p>
+            <p> <%= course.teeType %></p><br>
+            <p id="show-cost">Cost Per Round:</p>
+            <p> $ <%= course.cost %></p><br>
+            <p id="show-beginnerFriendly">Beginner Friendly?</p>
+            <p> <%= course.beginnerFriendly %></p><br>
+            <p id="show-description">Description:</p>
+            <p> <%= course.description %></p><br>
+            <p id="show-photos">Course Photos:</p>
+                <img src="<%=course.image1%>" class="d-block w-100" alt="photo 1">
+                <img src="<%=course.image2%>" class="d-block w-100" alt="photo 2">
+                <img src="<%=course.image3%>" class="d-block w-100" alt="photo 3">
+                <img src="<%=course.image4%>" class="d-block w-100" alt="photo 4">
+        </div><br>
+        <a href="/courses" class="btn btn-primary w-100" role="button">Back to Course List</a>
     </div>
     </div>
     <%- include('../partials/footer.ejs') %>

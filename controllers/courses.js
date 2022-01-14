@@ -36,6 +36,16 @@ coursesRouter.delete('/:id', (req, res) => {
 
 // Update Route
 coursesRouter.put('/:id', (req, res) => {
+    if (req.body.waterHoles === 'on') {
+        req.body.waterHoles = true;
+    } else {
+        req.body.waterHoles = false;
+    }
+    if (req.body.beginnerFriendly === 'on') {
+        req.body.beginnerFriendly = true;
+    } else {
+        req.body.beginnerFriendly = false;
+    }
     Course.findByIdAndUpdate(req.params.id, req.body, {
         new: true,
     }, (err,updatedCourse) => {

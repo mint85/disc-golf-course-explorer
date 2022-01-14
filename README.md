@@ -1,14 +1,20 @@
 # Disc Golf Course Explorer
 
-Disc Golf Course Explorer is an application designed to help the user look up new disc golf courses to play. There is detailed information about each course, including course photos. 
+Disc Golf Course Explorer is an application designed to help the user find new disc golf courses to play. There is detailed information about each course, including course photos. 
 
 Users can edit existing course information, add new courses, and delete courses from the database.
 
-## Getting Started
+<br>
+
+## Getting Started:
+
+<br>
 
 Deployed App: https://disc-golf-course-explorer.herokuapp.com/
 
-## Technologies Used
+<br>
+
+## Technologies Used:
 
 - Node.js
 - Express
@@ -19,7 +25,22 @@ Deployed App: https://disc-golf-course-explorer.herokuapp.com/
 - CSS
 - Bootstrap CSS Framework
 
-## Next Steps
+<br>
+
+## Screenshots:
+
+<br>
+
+![screen1](/public/images/screen1.png)
+![screen2](/public/images/screen2.png)
+![screen3](/public/images/screen3.png)
+![screen4](/public/images/screen4.png)
+
+<br>
+
+## Next Steps:
+
+<br>
 
 This app is currently able to display detailed information about disc golf courses, but lacks the data set necessary to become more robust. Planned future improvements include:
 

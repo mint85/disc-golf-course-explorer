@@ -45,6 +45,16 @@ coursesRouter.put('/:id', (req, res) => {
 
 // Create Route
 coursesRouter.post('/', (req, res) => {
+    if (req.body.waterHoles === 'on') {
+        req.body.waterHoles = true;
+    } else {
+        req.body.waterHoles = false;
+    }
+    if (req.body.beginnerFriendly === 'on') {
+        req.body.beginnerFriendly = true;
+    } else {
+        req.body.beginnerFriendly = false;
+    }
     Course.create(req.body, (err, createdCourse) => {
         console.log(err);
         res.redirect('/courses');

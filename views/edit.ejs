@@ -43,6 +43,7 @@
             <form action="/courses/<%=course._id%>?_method=PUT" method="POST">
                 Course Name: <input type="text" name="name" value="<%= course.name%>"><br>
                 Location: <input type="text" name="location" value="<%=course.location%>"><br>
+                Zipcode: <input type="number" name="zipcode" value="<%=course.zipcode%>"><br>
                 Holes: <input type="number" name="holes" value="<%=course.holes%>"><br>
                 Water Holes? <input type="checkbox" name="waterHoles" value="<%=course.waterHoles%>"><br>
                 Tee Type: <input type="text" name="teeType" value="<%=course.teeType%>"><br>

@@ -1,13 +1,21 @@
+/* Body (global) */
+
 body {
     background-color: rgb(49, 49, 49);
     color: white;
 }
+
+/* Navigation Bar */
+
 .navbar {
     background-color: rgb(49, 49, 49);
 }
 .navbar-nav {
     background-color: rgb(49, 49, 49);
 }
+
+/* 404 Page */
+
 .div-404 {
     display: flex;
     flex-direction: column;
@@ -20,6 +28,9 @@ body {
 .img-404 {
     padding: 3%;
 }
+
+/* Edit Page */
+
 .edit-area {
     display: inline-flex;
     flex-direction: column;
@@ -28,6 +39,8 @@ body {
     background-color: black;
     border-radius: 50px;
 }
+
+/* New Page */
 
 .new-area {
     display: inline-flex;
@@ -38,6 +51,8 @@ body {
     border-radius: 50px;
 }
 
+/* Index Page */
+
 .hero-section {
     height: 100vh;
     width: 100%;
@@ -45,6 +60,7 @@ body {
     position: relative;
     margin-bottom: 20px;
 }
+
 .hero-image {
     background: url("/public/images/DGCElogocrop.jpg") no-repeat center center;
     height: 100%;
@@ -60,7 +76,6 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    
 }
 
 .hero-text h1 {
@@ -71,7 +86,6 @@ body {
 
 .course-image-index {
     height: 30vh;
-    
 }
 
 .course-list {
@@ -104,6 +118,7 @@ body {
 #show-location {
     font-size: 3vw;
 }
+
 #show-holes, #show-waterHoles, #show-teeType, #show-cost, #show-beginnerFriendly, #show-description, #show-photos {
     color:rgb(22, 153, 146);
     font-weight: bold;

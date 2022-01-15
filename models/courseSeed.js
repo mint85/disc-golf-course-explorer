@@ -10,7 +10,7 @@ module.exports = [{
     teeType: 'Concrete (XL)',
     cost: '6.45',
     beginnerFriendly: false,
-    description: `Challenging championship course design that overlooks a scenic lake. Rolling hills with challenging elevation changes. Great variation of wooded and open holes with near-perfect groundskeeping. All tee boxes and pin locations are nice and clean. Alternate tees and pin placements. Allen's favorite overall course that is close to the Twin Cities `,
+    description: `Challenging championship course design that overlooks a scenic lake. Rolling hills with challenging elevation changes. Great variation of wooded and open holes with near-perfect groundskeeping. All tee boxes and pin locations are nice and clean. Alternate tees and pin placements. Allen's favorite overall course that is close to the Twin Cities. `,
     image1: 'https://res.cloudinary.com/amjdev/image/upload/v1642020280/bryantlake1_jncxhg.jpg',
     image2: 'https://res.cloudinary.com/amjdev/image/upload/v1642031865/c07058f9_xbjzwn.jpg',
     image3: 'https://res.cloudinary.com/amjdev/image/upload/v1642031941/e72362e7_ncrcw5.jpg',

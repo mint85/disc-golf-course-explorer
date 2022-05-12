@@ -46,7 +46,7 @@ Deployed App: https://disc-golf-course-explorer.herokuapp.com/
 
 <br> 
 
-## Next Steps:
+## Future Enhancements:
 
 <br>
 
@@ -58,3 +58,4 @@ This app is currently able to display detailed information about disc golf cours
 - Implement user authentication
     - Allow authenticated users to add courses to a list of their 'favorites'
     - Allow authenticated users to save their disc bag
+- Add custom favicon

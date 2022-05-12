@@ -124,3 +124,13 @@ body {
     font-weight: bold;
 }
 
+/* FOOTER */
+
+.footer {
+    text-align: center;
+}
+
+#footerLink {
+    font-weight: bold;
+    color: white;
+}
